@@ -1,8 +1,3 @@
-html {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -22,10 +17,7 @@ h1 {
   font-weight: 500;
 }
 
-form {
-  text-align: center;
-}
-form .password {
+.form .form-login .password-login {
   margin-left: 43%;
   border: 1px solid rgb(202, 202, 202);
   border-radius: 7px;
@@ -33,7 +25,8 @@ form .password {
   height: 28px;
   color: rgb(105, 105, 105);
 }
-form .gmail {
+
+.form .form-login .gmail-login {
   margin-left: 43%;
   border: 1px solid rgb(202, 202, 202);
   border-radius: 7px;
@@ -41,7 +34,8 @@ form .gmail {
   height: 28px;
   color: rgb(105, 105, 105);
 }
-form .submit {
+
+.form .form-login .submit-login {
   margin-left: 42.5%;
   margin-top: 40px;
   width: 230px;
@@ -54,44 +48,27 @@ form .submit {
   font-size: 15px;
   font-weight: 100;
 }
-form .inputs input {
+
+.form .form-login input {
   display: block;
   margin-top: 32px;
   margin-bottom: 10px;
 }
 
-.forgotten-password {
+.form .forgotten-password {
   margin-left: 45%;
   font-size: 11px;
   text-decoration: none;
   color: #2669AA;
 }
 
-nav {
+.nav-index {
   position: fixed;
   max-width: 100%;
   height: 55px;
   border-bottom: 1px solid #bebebe;
   position: relative;
   padding: 10px;
-}
-nav .info-doc span {
-  height: 400px;
-  font-size: 13px;
-  margin-left: 87%;
-}
-nav img {
-  margin-left: 80%;
-  position: absolute;
-  height: 60px;
-  width: 60px;
-  border-radius: 50px;
-}
-
-.search-options {
-  width: 100%;
-  height: 500px;
-  background-color: #e9e9e9;
 }
 
 .options {
@@ -106,18 +83,14 @@ nav img {
   color: #2d81d4;
 }
 
-.search {
-  height: 110px;
-  margin-top: 30px;
-  margin-left: 13%;
-}
-.search .buscar-pacientes {
-  width: 380px;
+.search .buscar-pacientes-input {
+  width: 30%;
   height: 30px;
   border: 1px solid #3481F4;
   border: 1px solid #3481F4;
   margin-right: 10px;
 }
+
 .search .container-icon {
   margin-top: 2px;
   margin-left: 24.4%;
@@ -126,7 +99,7 @@ nav img {
   width: 50px;
   height: 31px;
 }
-.search .fas {
+.search .container-icon .fas {
   padding-top: 2px;
   padding-left: 13px;
   position: absolute;
@@ -135,27 +108,29 @@ nav img {
   height: 35px;
   color: #ffffff;
 }
+
 .search .buttons-idk {
   margin-left: 50px;
   position: absolute;
   display: inline-block;
   width: 100px;
 }
-.search .date {
+.search .buttons-idk .date {
   width: 120px;
   border: 1px solid rgb(255, 255, 255);
   background-color: #3481F4;
   color: white;
   height: 30px;
 }
-.search .A-Z {
+.search .buttons-idk .A-Z {
   height: 30px;
   width: 120px;
   border: 1px solid rgb(255, 255, 255);
   background-color: #3481F4;
   color: white;
 }
-.search .submit {
+
+.search .submit-index {
   margin-left: 220px;
   height: 30px;
   width: 120px;
@@ -164,32 +139,40 @@ nav img {
   color: white;
 }
 
-.query {
-  width: 100%;
-  height: 500px;
-  border-top: 1px solid #bebebe;
-}
-
-.query-user {
+.query .query-user {
+  display: flex;
+  flex-direction: column;
   display: flex;
   flex-direction: column;
 }
-
-.user-name {
+.query .query-user td {
+  border-bottom: 1px solid #bebebe;
+}
+.query .query-user .info-img {
+  width: 250px;
+  padding: 10px;
+}
+.query .query-user .user-name {
   margin-bottom: 10px;
 }
-
-.user-info {
-  margin-left: 210px;
-  margin-top: 50px;
-  position: absolute;
+.query .query-user .user-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 0px;
+  margin-left: 60px;
+  border-radius: 50px;
 }
-
-.user-img {
-  width: 170px;
+.query .query-user td {
+  border-bottom: 1px solid #bebebe;
 }
-
-.user-image {
+.query .query-user .info-img {
+  width: 250px;
+  padding: 10px;
+}
+.query .query-user .user-name {
+  margin-bottom: 10px;
+}
+.query .query-user .user-image {
   width: 100px;
   height: 100px;
   margin-top: 0px;
@@ -197,14 +180,34 @@ nav img {
   border-radius: 50px;
 }
 
-.info-img {
-  width: 250px;
+html {
+  margin: 0;
+  padding: 0;
 }
 
-td {
-  border-bottom: 1px solid #bebebe;
+.form .form-login {
+  text-align: center;
+}
+.nav-index .info-doc span {
+  height: 400px;
+  font-size: 14px;
+  margin-left: 87%;
+}
+.nav-index img {
+  margin-left: 80%;
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
 }
 
-.info-img {
-  padding: 10px;
+.search {
+  height: 110px;
+  margin-top: 30px;
+  margin-left: 13%;
+}
+.query {
+  width: 100%;
+  height: 500px;
+  border-top: 1px solid #bebebe;
 }/*# sourceMappingURL=style.css.map */

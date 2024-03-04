@@ -1,8 +1,5 @@
-html{
-    margin: 0;
-    padding: 0;
-}
-body{
+//placeholders
+%body-style{
     scroll-behavior: smooth;
     overflow-x: hidden;
     padding: 0;
@@ -14,38 +11,32 @@ body{
     font-size: 20px;
 }
 
-h1{
+%h1-style{   
     color: #000000;
     margin-top: 150px;
     margin-left: 43%;
     font-weight: 500;
 }
-
-form{
-   text-align: center;
-
-
-  
-    .password{
-        margin-left: 43%;
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 7px;
-        width: 210px;
-        height: 28px;
-        color:rgb(105, 105, 105);
-
-    }
-    .gmail{
-        margin-left: 43%;
-        border: 1px solid rgb(202, 202, 202);
-        border-radius: 7px;
-        width: 210px;
-        height: 28px;
-        color:rgb(105, 105, 105);
-    
-
+//Login-Start
+%password-login-style{
+    margin-left: 43%;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 7px;
+    width: 210px;
+    height: 28px;
+    color:rgb(105, 105, 105);
 }
-.submit{
+
+%gmail-login-style{
+    margin-left: 43%;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 7px;
+    width: 210px;
+    height: 28px;
+    color:rgb(105, 105, 105);
+}
+
+%submit-login-style{
     margin-left: 42.5%;
     margin-top: 40px;
     width: 230px;
@@ -58,56 +49,32 @@ form{
     font-size: 15px;
     font-weight: 100;
 }
-
-  .inputs input{
+%input-login-style{
     display: block;
     margin-top: 32px;  
     margin-bottom: 10px;
-    }
-
-
 }
-.forgotten-password{
-   margin-left: 45%;
-   font-size: 11px;
-   text-decoration: none;
-   color: #2669AA;
+%forgotten-password-style{
+    margin-left: 45%;
+    font-size: 11px;
+    text-decoration: none;
+    color: #2669AA;
 }
+//Login-End
 
-
-//STYLES NAV
-nav{
+//index-Styles-Start
+%nav-index-styles{
     position: fixed;
     max-width: 100%;
     height: 55px;
     border-bottom: 1px solid #bebebe;
     position: relative;
     padding: 10px;
-
-    .info-doc span{
-        height: 400px;
-        font-size: 13px;
-        margin-left: 87%;    
-    }
-    
-    img{
-        margin-left: 80%;
-        position: absolute;
-        height: 60px;
-        width: 60px;
-        border-radius: 50px;
-    }
 }
 
-.search-options{
-    width: 100%;
-    height: 500px;
-    background-color: #e9e9e9;
-}
-
-.options{
+%options-styles-index{
     display: flex;
-   justify-content: space-around;
+    justify-content: space-around;
     margin-top: 30px;
 
     a{     
@@ -117,29 +84,22 @@ nav{
         }
     }
 }
+%buscar-pacientes-input{
+    width: 30%;
+    height: 30px;
+    border: 1px solid #3481F4;
+    border: 1px solid #3481F4;
+    margin-right: 10px;
+}
 
-.search{
-    height: 110px;
-    margin-top: 30px;
-    margin-left: 13%;
-
-    .buscar-pacientes{
-        width: 380px;
-        height: 30px;
-        border: 1px solid #3481F4;
-        border: 1px solid #3481F4;
-        margin-right: 10px;
-    }
-
-    .container-icon{
-        margin-top: 2px;
-        margin-left: 24.4%;
-        position: absolute;
-        background-color: #3481F4;
-        width: 50px;
-        height: 31px;
-    }
-  
+%container-icon-styles{
+    margin-top: 2px;
+    margin-left: 24.4%;
+    position: absolute;
+    background-color: #3481F4;
+    width: 50px;
+    height: 31px;
+    
     .fas{
         padding-top: 2px;
         padding-left: 13px;
@@ -149,13 +109,13 @@ nav{
         height: 35px;
         color: #ffffff;
     }
-    .buttons-idk{
-        margin-left: 50px;
-        position: absolute;
-        display: inline-block;
-        width: 100px;
-    }
-    
+}
+
+%buttons-idk-styles{
+    margin-left: 50px;
+    position: absolute;
+    display: inline-block;
+    width: 100px;
     .date{
         width: 120px;
         border: 1px solid rgb(255, 255, 255);
@@ -172,13 +132,137 @@ nav{
         color: white;
     }
 
-    .submit{
-        margin-left: 220px;
-        height: 30px;
-        width: 120px;
-        border: 1px solid rgb(255, 255, 255);
-        background-color: #3481F4;
-        color: white;
+}
+%submit-index-styles{
+    margin-left: 220px;
+    height: 30px;
+    width: 120px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #3481F4;
+    color: white;
+}
+
+%query-user-styles{
+    display: flex;
+    flex-direction: column;   
+    td{
+        border-bottom: 1px solid #bebebe ;
+    }
+    .info-img{
+        width: 250px;
+        padding: 10px
+    }
+    .user-name{
+       margin-bottom: 10px;
+    }
+    .user-image{
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+        margin-left: 60px;
+        border-radius: 50px;
+    }   display: flex;
+        flex-direction: column;   
+        td{
+            border-bottom: 1px solid #bebebe ;
+        }
+        .info-img{
+            width: 250px;
+            padding: 10px
+        }
+        .user-name{
+           margin-bottom: 10px;
+        }
+        .user-image{
+            width: 100px;
+            height: 100px;
+            margin-top: 0px;
+            margin-left: 60px;
+            border-radius: 50px;
+        }
+}
+//End Placeholders
+
+//GENERIC STYLES
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    @extend %body-style;
+}
+
+h1{
+    @extend %h1-style;
+}
+
+//Form index.html
+.form{
+    .form-login{
+       text-align: center;
+        .password-login{
+            @extend %password-login-style;
+        }
+        .gmail-login{
+            @extend %gmail-login-style;
+        }
+        .submit-login{
+            @extend %submit-login-style;
+        }
+    
+        input{
+          @extend %input-login-style;
+        }
+    }
+    .forgotten-password{
+       @extend %forgotten-password-style;
+    }
+
+}
+
+//STYLES NAV
+.nav-index{
+    @extend %nav-index-styles; 
+
+    .info-doc span{
+        height: 400px;
+        font-size: 14px;
+        margin-left: 87%;    
+    }
+    
+    img{
+        margin-left: 80%;
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+    }
+}
+
+
+.options{
+    @extend %options-styles-index;
+}
+
+.search{
+    height: 110px;
+    margin-top: 30px;
+    margin-left: 13%;
+    
+    .container-icon{
+      @extend %container-icon-styles;
+    }
+
+    .buscar-pacientes-input{
+       @extend %buscar-pacientes-input;
+    }
+  
+    .buttons-idk{
+      @extend %buttons-idk-styles;    
+       
+    }
+    .submit-index{
+       @extend %submit-index-styles
     }
 }
 
@@ -186,43 +270,8 @@ nav{
     width: 100%;
     height: 500px;
     border-top: 1px solid #bebebe;
-}
 
-.query-user{
-    display: flex;
-    flex-direction: column;
-      
-    
-}
- .user-name{
-    margin-bottom: 10px;
-   }
-
-    .user-info{
-        margin-left: 210px;
-        margin-top: 50px;
-        position: absolute;
+    .query-user{
+     @extend %query-user-styles;
     }
-
-.user-img{
-    width: 170px;
-}
-
-.user-image{
-    width: 100px;
-    height: 100px;
-    margin-top: 0px;
-    margin-left: 60px;
-    border-radius: 50px;
-}
-.info-img{
-    width: 250px;
-}
-
-td{
-    border-bottom: 1px solid #bebebe ;
-}
-
-.info-img{
-    padding: 10px;
 }
