@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/433f939d3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock%}</title>
+  </head>
+  <body>
+    <nav class="nav-index">
+      <div class="info-doc">
+        <img
+          src="https://code-fu.net.ni/wp-content/uploads/2024/01/ydarce-001.webp"
+          alt="Dryasser"
+        />
+        <span>Dr. Ejemplo Prueba</span>
+        <span>Especialidad</span>
+      </div>
+    </nav>
+    {%block options%}
+ 
+    {%endblock%}
+    <div class="search">
+      <div class="container-icon"><i class="fas fa-search icon search-icon"></i></div>
+      <input
+        class="buscar-pacientes-input"
+        type="search"
+        placeholder="Buscar Pacientes..."
+      />
+      <span style="font-size: 16px; margin-left: 30px">Ordenar Por</span>
+      <div class="buttons-idk">
+        <input type="submit" value="Fecha" class="date" />
+        <input type="submit" value="A-Z" class="A-Z" />
+      </div>
+      <input class="submit-index" type="submit" value="AÑADIR" />
+    </div>
+    <main>{% block content %} {% endblock %}</main>
+  </body>
+</html>
